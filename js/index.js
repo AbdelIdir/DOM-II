@@ -11,11 +11,11 @@ containerHome.style.color = "blue";
 
 const IntroText = containerHome.querySelector("h2");
 
-IntroText.style.color = "yellow";
+IntroText.style.color = "green";
 
 const h1 = document.querySelector("h1");
 
-h1.addEventListener("mouseover", event => {
+h1.addEventListener("mouseover", () => {
   event.target.style.fontSize = "90px";
 });
 
@@ -92,9 +92,7 @@ window.addEventListener("scroll", event => {
   mapImg.style.display = "none";
 });
 
-
 let lastimg = document.querySelector(".content-destination img");
-
 
 lastimg.addEventListener("drag", () => {
   alert("and now you are stuck....");
@@ -108,13 +106,10 @@ function copyr() {
 
 adv.addEventListener("dblclick", copyr);
 
-
-
-
 function selector() {
   alert("You selected some text!");
 }
 
-const h4 = document.querySelectorAll("h4");
+const endFooter = document.querySelector("footer");
 
-h4.addEventListener("select",selector);
+endFooter.addEventListener("select", selector);
