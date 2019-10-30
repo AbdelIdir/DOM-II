@@ -107,9 +107,13 @@ function copyr() {
 adv.addEventListener("dblclick", copyr);
 
 function selector() {
-  alert("You selected some text!");
+  return alert("You selected some text!");
+}
+
+function mySelectFunction() {
+  document.getElementsByClassName("destination").select();
 }
 
 const endFooter = document.querySelector("footer");
 
-endFooter.addEventListener("select", selector);
+endFooter.onselect = selector;
