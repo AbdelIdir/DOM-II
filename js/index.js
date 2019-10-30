@@ -116,4 +116,6 @@ function mySelectFunction() {
 
 const endFooter = document.querySelector("footer");
 
-endFooter.onselect = selector;
+const textF = endFooter.querySelector("p")
+
+textF.onselect = selector;
