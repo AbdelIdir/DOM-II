@@ -110,3 +110,11 @@ adv.addEventListener("dblclick", copyr);
 
 
 
+
+function selector() {
+  alert("You selected some text!");
+}
+
+const h4 = document.querySelectorAll("h4");
+
+h4.addEventListener("select",selector);
