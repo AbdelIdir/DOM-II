@@ -93,6 +93,7 @@ window.addEventListener("scroll", event => {
 });
 
 
+let lastimg = document.querySelector(".content-destination img");
 
 
 lastimg.addEventListener("drag", () => {
@@ -107,22 +108,5 @@ function copyr() {
 
 adv.addEventListener("dblclick", copyr);
 
-let anchor = document.querySelector(".nav .nav-link");
 
-anchor.addEventListener("focus", event => {
-  const a = event.target.parentElement;
-  a.parentNode.style.background = "red";
-});
 
-let anchora = document.querySelector(".nav a:nth-of-type(2)");
-
-anchora.addEventListener("click", () => {
-  anchora.style.background = "blue";
-});
-
-let head = document.querySelector(".container p");
-
-head.addEventListener("select", event => {
-  const b = event.target.parentElement;
-  b.parentNode.style.background = "green";
-});
