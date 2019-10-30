@@ -93,49 +93,36 @@ window.addEventListener("scroll", event => {
 });
 
 
-lastimg.addEventListener("drag",() => {
-    alert("and now you are stuck....");
-});
 
+
+lastimg.addEventListener("drag", () => {
+  alert("and now you are stuck....");
+});
 
 var adv = document.querySelector(".btn");
 
-function copyr (){
-    alert("this pack is sold out")
-};
+function copyr() {
+  alert("this pack is sold out");
+}
 
-
-adv.addEventListener("dblclick", copyr
-);
-
+adv.addEventListener("dblclick", copyr);
 
 let anchor = document.querySelector(".nav .nav-link");
 
+anchor.addEventListener("focus", event => {
+  const a = event.target.parentElement;
+  a.parentNode.style.background = "red";
+});
 
+let anchora = document.querySelector(".nav a:nth-of-type(2)");
 
-anchor.addEventListener('focus', (event) => {
-    const a = event.target.parentElement;
-    a.parentNode.style.background = "red";
-  });
+anchora.addEventListener("click", () => {
+  anchora.style.background = "blue";
+});
 
+let head = document.querySelector(".container p");
 
-  let anchora = document.querySelector(".nav a:nth-of-type(2)");
-
-
-
-  anchora.addEventListener('click', () => {
-     
-      anchora.style.background = "blue";
-    });
-  
-
-
-
-
-
-  let head = document.querySelector(".container p");
-
-  head.addEventListener('select', (event) => {
-    const b = event.target.parentElement;
-    b.parentNode.style.background = "green";
-  });
+head.addEventListener("select", event => {
+  const b = event.target.parentElement;
+  b.parentNode.style.background = "green";
+});
