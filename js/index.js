@@ -15,7 +15,7 @@ IntroText.style.color = "green";
 
 const h1 = document.querySelector("h1");
 
-h1.addEventListener("mouseover", () => {
+h1.addEventListener("mouseover", (event) => {
   event.target.style.fontSize = "90px";
 });
 
@@ -119,3 +119,19 @@ const endFooter = document.querySelector("footer");
 const textF = endFooter.querySelector("p")
 
 textF.onselect = selector;
+
+
+
+
+
+const contDesti = document.querySelector(".text-content");
+
+contDesti.addEventListener("click",event => {
+  event.target.style.background = "red";
+  event.stopPropagation();
+});
+
+window.onclick = (event) => {
+  event.target.style.background= "blue"  ;
+};
+
